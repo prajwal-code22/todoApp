@@ -26,10 +26,6 @@
 //     });
 // });
 document.addEventListener('DOMContentLoaded', () => {
-
-
-
-
     //handling event to add the student in local storage
     let addBtn = document.getElementById('add-btn');
     addBtn.addEventListener('click', studentData);
@@ -51,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
     //delete functionality to delete data
-    
+
 
     // Function to retrieve all student data from localStorage
     function getAllStudentsData() {
@@ -69,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function displayStudentData() {
         let students = getAllStudentsData();
         let tableBody = document.getElementById('table-data');
-      
+
 
         // Create the delete icon element
         let deleteIcon = document.createElement('i');
@@ -94,22 +90,22 @@ document.addEventListener('DOMContentLoaded', () => {
             nameCell.innerText = student.name;
             dateCell.innerText = student.date;
             dueCell.innerText = student.dueAmount;
-            delBtn=document.createElement('button');
-            delBtn.innerHTML='<i class="fa fa-trash" style="color: #ad6565 !important;" aria-hidden="true"></i>';
-            delBtn.addEventListener('click',()=>{
-          
+            delBtn = document.createElement('button');
+            delBtn.innerHTML = '<i class="fa fa-trash" style="color: #ad6565 !important;" aria-hidden="true"></i>';
+            delBtn.addEventListener('click', () => {
+
                 localStorage.removeItem(student.id.toString());
                 row.remove();
                 alert('Student data deleted successfully!');
 
             });
             delCell.appendChild(delBtn);
-            
+
         });
     }
 
     // Call the displayStudentData function to initially populate the table
     displayStudentData();
 
-  
+
 });
