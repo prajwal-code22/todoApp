@@ -52,6 +52,10 @@ body::before {
 }
 .main2{
         margin: 45px;
-        color: red;
-        background-color: burlywood;
+        color: rgb(230, 226, 226);
+        background-color: #8887de61;
     }
+.made-by{
+    color: black;
+    margin-left: 47rem;
+}
