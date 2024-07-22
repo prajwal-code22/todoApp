@@ -1,30 +1,4 @@
-// document.addEventListener('DOMContentLoaded', () => {
-//     let student = document.getElementById('student-name');
-//     let registerDate = document.getElementById('date');
-//     let due= document.getElementById('due');
-//     let addBtn = document.getElementById('add-btn');
-//     let parent=document.getElementById('table-data');
-//     let count=0;
-//     addBtn.addEventListener('click', () => {
-//        count =count+1;
-//        let studentTr=document.createElement('tr');
-//        let idH=document.createElement('th');
-//        idH.innerText=count
-//        let studentTd = document.createElement('td');
-//        let registerDateTd = document.createElement('td');
-//        let dueTd=document.createElement('td');
-//        dueTd.innerText=due.value;
-//        studentTd.innerText=student.value;
-//        registerDateTd.innerText=registerDate.value;
-//        studentTr.appendChild(idH);
-//        studentTr.appendChild(studentTd);
-//        studentTr.appendChild(registerDateTd);
-//        studentTr.appendChild(dueTd);
-//        parent.appendChild(studentTr);
 
-
-//     });
-// });
 document.addEventListener('DOMContentLoaded', () => {
     //handling event to add the student in local storage
     let addBtn = document.getElementById('add-btn');
