@@ -10,8 +10,11 @@ body::before {
     background-repeat: no-repeat;
     background-size: cover; /* Cover the entire element */
 }
-.main {
-    background-image: url('calendar-plan-doing-business-activities-monthly_34936-1855.jpg');
+.main{
+    display:flex;
+}
+.main1 {
+    background-image: url('Tuition 23.webp');
     width: 77%;
     height: 45rem;
     margin: 0px auto;
@@ -34,13 +37,21 @@ body::before {
     display: flex;
     padding:10px;
     gap:0.3rem;
+    margin-top: 6rem;
 }
 .btn-default{
     background-color: rgb(86, 109, 168);
     color:white;
 }
 .form-control{
-   color:rgb(54, 6, 34)!important;
-   font-size: 30px!important;
+   color:rgb(176, 52, 14)!important;
+   font-size: 15px!important;
    background-color: rgba(206, 180, 180, 0.333)!important;
+   font-size: bold!important;
+   font-weight: 20px!important;
 }
+.main2{
+        margin: 45px;
+        color: red;
+        background-color: burlywood;
+    }

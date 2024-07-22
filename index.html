@@ -9,19 +9,45 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
+  <div class="main">
     <div class="col-md-6">
-    <div class="main">
-    <h1 class="heading">Todo App </h1>
+    <div class="main1">
+    <h1 class="heading">Tuition App </h1>
     <div class="input-group">
-        <input type="text" class="form-control" placeholder="Add todo list here">
+        <input type="text" class="form-control" id="student-name" placeholder="Add Name of student">
+        <input type="date" id="date" class="form-control">
         <div class="input-group-btn">
-          <button class="btn btn-default" type="submit">
+          <button class="btn btn-default" id="add-btn" type="submit">
             Add
           </button>
         </div>
       </div>
     </div>
 
+</div>
+<div class="row-md-6">
+  <div class="main2">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Student name</th>
+      <th scope="col">Start Date</th>
+      <th scope="col">Due</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+   
+  </tbody>
+</table>
+</div>
+</div>
 </div>
     <script src="main.js"></script>
 </body>
